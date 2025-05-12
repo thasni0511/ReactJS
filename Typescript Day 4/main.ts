@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // Notes : Interface: describes what properties and methods a Person should have
+=======
+// Interface: describes what properties and methods a Person should have
+>>>>>>> f7498f6d34f9087b0cbf3465bfb540c0e79162c0
 interface Inter_Person {
   name: string;
   age: number;
@@ -35,8 +39,12 @@ class Employee extends Person {
     salary: number,
     incentives: number
   ) {
+<<<<<<< HEAD
     super(name, age, PersonId, salary); // calls super() to initialize the parent class properties.
 
+=======
+    super(name, age, PersonId, salary); // Call parent constructor
+>>>>>>> f7498f6d34f9087b0cbf3465bfb540c0e79162c0
     this.incentives = incentives;
   }
 
@@ -44,7 +52,11 @@ class Employee extends Person {
     return this.getSalary() + this.incentives;
   }
 
+<<<<<<< HEAD
   showDetails(): string { //method returns a formatted HTML string showing all the employee details.
+=======
+  showDetails(): string {
+>>>>>>> f7498f6d34f9087b0cbf3465bfb540c0e79162c0
     return `
       Name: ${this.name}<br>
       Age: ${this.age}<br>
@@ -74,7 +86,11 @@ function login() {
   const password = (document.getElementById("password") as HTMLInputElement).value;
 
   const record = PersonDB[username];
+<<<<<<< HEAD
   if (record && record.password === password) { //Look up the entered username in the PersonDB and Check if the record exists and the password matches.
+=======
+  if (record && record.password === password) {
+>>>>>>> f7498f6d34f9087b0cbf3465bfb540c0e79162c0
     const emp = record.Person;
     document.getElementById("loginForm")!.style.display = "none";
     const outputDiv = document.getElementById("employeeDetails")!;
@@ -86,6 +102,10 @@ function login() {
 }
 
 // Attach login function to button after DOM is loaded
+<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", () => { //finished reading and building the basic HTML of the page.
+=======
+document.addEventListener("DOMContentLoaded", () => {
+>>>>>>> f7498f6d34f9087b0cbf3465bfb540c0e79162c0
   document.getElementById("loginButton")?.addEventListener("click", login);
 });

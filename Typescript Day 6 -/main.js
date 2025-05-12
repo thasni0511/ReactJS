@@ -134,11 +134,19 @@ function loadCart() {
         const cartItemDiv = document.createElement('div');
         cartItemDiv.classList.add('cart-item');
         totalAmount += item.price;
+<<<<<<< HEAD
         cartItemDiv.innerHTML = `
       <img src="${item.image}" alt="${item.name}" onerror="this.src='Images/default.jpg'" />
       <p>${item.name}</p>
       <p>₹${item.price}</p>
       <button onclick="removeFromCart(${index})">Remove</button>
+=======
+        cartItemDiv.innerHTML = `
+      <img src="${item.image}" alt="${item.name}" onerror="this.src='Images/default.jpg'" />
+      <p>${item.name}</p>
+      <p>₹${item.price}</p>
+      <button onclick="removeFromCart(${index})">Remove</button>
+>>>>>>> f7498f6d34f9087b0cbf3465bfb540c0e79162c0
     `;
         cartItems.appendChild(cartItemDiv);
     });

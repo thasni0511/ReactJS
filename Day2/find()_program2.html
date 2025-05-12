@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
 <body>
 
@@ -24,3 +25,31 @@
 
 </body>
 </html>
+=======
+<html>
+<body>
+
+<p id="l1"></p>
+
+<script>
+  var students = [
+    { name: 'Thasni', grade: 85 },
+    { name: 'Jisha', grade: 45 },
+    { name: 'Primsy', grade: 85 },
+    { name: 'Karthika', grade: 40 }
+  ];
+
+  var student = students.find(student => student.name === 'Primsy');
+
+  if (student) {
+    document.getElementById("l1").innerHTML = 
+      "Name: " + student.name + ", Grade: " + student.grade;
+  } else {
+    document.getElementById("l1").innerHTML = 
+      "Not found";
+  }
+</script>
+
+</body>
+</html>
+>>>>>>> f7498f6d34f9087b0cbf3465bfb540c0e79162c0

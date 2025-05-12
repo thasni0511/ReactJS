@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 {
     "compilerOptions": {
       "target": "es2015",
       "lib": ["es2015", "dom"]
     }
   }
+=======
+{
+    "compilerOptions": {
+      "target": "es2015",
+      "lib": ["es2015", "dom"]
+    }
+  }
+>>>>>>> f7498f6d34f9087b0cbf3465bfb540c0e79162c0
   

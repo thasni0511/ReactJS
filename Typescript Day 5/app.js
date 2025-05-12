@@ -13,7 +13,12 @@ const users = [
     const passwordInput = document.getElementById("password").value;
     const foundUser = users.find((user) => user.username === usernameInput && user.password === passwordInput);
     if (foundUser) {
+<<<<<<< HEAD
         document.getElementById("loginForm").style.display = "none"; // Hiding login form
+=======
+        // Hide login form
+        document.getElementById("loginForm").style.display = "none";
+>>>>>>> f7498f6d34f9087b0cbf3465bfb540c0e79162c0
         if (isAdmin(foundUser)) {
             const adminPage = document.getElementById("adminPage");
             adminPage.style.display = "block";
@@ -23,7 +28,11 @@ const users = [
                 const salaryInfo = document.getElementById("salaryInfo");
                 if ("salary" in foundUser) {
                     salaryInfo.innerText = `Your Salary: $${foundUser.salary}`;
+<<<<<<< HEAD
                     salaryInfo.style.display = "block";
+=======
+                    salaryInfo.style.display = "block"; // Show salary info
+>>>>>>> f7498f6d34f9087b0cbf3465bfb540c0e79162c0
                 }
             });
         }
@@ -45,10 +54,19 @@ const users = [
     resetView();
 });
 function resetView() {
+<<<<<<< HEAD
     document.getElementById("loginForm").style.display = "block";
     document.getElementById("adminPage").style.display = "none";
     document.getElementById("employeePage").style.display = "none";
     document.getElementById("salaryInfo").style.display = "none"; // Hiding salary
+=======
+    // Show the login form and hide other pages
+    document.getElementById("loginForm").style.display = "block";
+    document.getElementById("adminPage").style.display = "none";
+    document.getElementById("employeePage").style.display = "none";
+    document.getElementById("salaryInfo").style.display = "none"; // Hide salary info
+    // Clear input fields
+>>>>>>> f7498f6d34f9087b0cbf3465bfb540c0e79162c0
     document.getElementById("username").value = "";
     document.getElementById("password").value = "";
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     font-family: Arial;
     text-align: center;
@@ -36,4 +37,44 @@ body {
     margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
+=======
+body {
+    font-family: Arial;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .calculator {
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+
+  input {
+    padding: 8px;
+    width: 100px;
+    margin: 10px;
+  }
+
+  button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  #result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+>>>>>>> f7498f6d34f9087b0cbf3465bfb540c0e79162c0
   }
