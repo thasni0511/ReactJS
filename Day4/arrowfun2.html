@@ -1,0 +1,23 @@
+<html>
+<body>
+
+  <p id="res"></p>
+
+  <script>
+
+let calculate = (a, b, operator) => {
+      if (operator === "add") return a + b;
+      if (operator === "sub") return a - b;
+      if (operator === "mul") return a * b;
+    };
+
+    let res = 
+      "Add: " + calculate(5, 2, "add") + "<br>" +
+      "Sub: " + calculate(5, 2, "sub") + "<br>" +
+      "Multi: " + calculate(5, 2, "mul");
+
+    document.getElementById("res").innerHTML = res;
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <h2>Check IN</h2>
+        <input type="time" id="arrive">
+        <button onclick="access()">Check Access</button>
+        <p id="res"></p>
+
+        <script>
+            var evaluate=(time,callback)=>{
+                var msg=(time<="09:30")
+                ?"Access Granted"
+                :"Acess Denied";
+                callback(msg);
+            };
+            function show(msg) {
+      document.getElementById("res").innerHTML = msg;
+    }
+
+    function access() {
+      var userTime = document.getElementById("arrive").value;
+      evaluate(userTime, show); 
+    }
+        </script>
+    </body>
+</html>

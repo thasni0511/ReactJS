@@ -1,0 +1,18 @@
+<html>
+<body>
+
+  <p id="res"></p>
+
+  <script>
+    let numbers = [1, 2, 3, 4];
+
+    let filtered = numbers.filter((num) => num > 2);
+
+    document.getElementById("res").innerHTML = "Filtered numbers: " + filtered.join(", ");
+
+  </script>
+
+</body>
+</html>
+<!-- Notes:
+filter() checks each element against the condition and only includes elements that pass the condition in the new array. -->

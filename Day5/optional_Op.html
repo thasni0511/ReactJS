@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <p id="res"></p>
+
+    <script>
+      let user = {
+        name: "Thasni",
+        // address:{
+        //     city:"tvm"
+        // }
+      };
+
+      let city = user.address?.city;
+
+      document.getElementById("res").innerHTML = city || "City not available";
+    </script>
+  </body>
+</html>

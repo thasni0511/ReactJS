@@ -1,0 +1,79 @@
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+    #todo-container {
+      max-width: 400px;
+      margin: auto;
+    }
+    input[type="text"] {
+      width: 70%;
+      padding: 8px;
+    }
+    button {
+      padding: 8px 12px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      padding: 10px;
+      border: 1px solid #ddd;
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    li.completed span {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="todo-container">
+    <h2>To-Do App</h2>
+    <input type="text" id="l1" placeholder="Add a Task">
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script>
+    function addTask() {
+      var input = document.getElementById("l1");
+      var taskText = input.value.trim();
+      if (taskText === "") return;
+
+      var li = document.createElement("li");
+
+      var span = document.createElement("span");
+      span.textContent = taskText;
+
+      var completeBtn = document.createElement("button");
+      completeBtn.textContent = "✔";
+      completeBtn.onclick = () => {
+        li.classList.toggle("completed");
+      };
+
+      var deleteBtn = document.createElement("button");
+      deleteBtn.textContent = "✖";
+      deleteBtn.onclick = () => {
+        li.remove();
+      };
+
+      li.appendChild(span);
+      li.appendChild(completeBtn);
+      li.appendChild(deleteBtn);
+
+      document.getElementById("taskList").appendChild(li);
+      input.value = ""; // clear input
+    }
+  </script>
+
+</body>
+</html>

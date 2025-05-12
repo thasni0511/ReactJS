@@ -1,0 +1,34 @@
+<html>
+<body>
+
+<p id="callbk"></p>
+
+<script>
+    function Cal(num1, num2, callback) {
+      let sum = num1 + num2;
+      callback(sum); // it is the callback shows ==> show(10);
+    }
+    
+    function show(result) {
+      document.getElementById("callbk").innerHTML = result;
+    }
+    
+    Cal(5, 5, show); // show is passed as a callback function In this case, callback is the show function, so it's like calling : show(10);
+
+    </script>
+</body>
+</html>
+
+<!-- Notes :
+
+A callback function is a function that is passed as a parameter to another function — and is called inside that function.
+the function is passed and then called inside the other function. --> 
+<!-- callbacks are great when:
+
+You want to do something after something else finishes.
+
+You're working with events, delays, or asynchronous actions (like when you click a button or load data from a server). -->
+<!-- More flexible — You can decide what to do with the result:
+Display
+Log it in console
+Use it in another calculation -->

@@ -1,0 +1,20 @@
+<html>
+<body>
+    <p id="res"></p>
+
+  <script>
+    let numbers = [1, 2, 3, 4];
+    let double = numbers.map((num) => num * 2);
+    // console.log("Doubled numbers:", double);
+    document.getElementById("res").innerHTML  = "Doubled numbers: " + double.join(", ");
+
+  </script>
+</body>
+</html>
+
+<!-- Notes: -->
+
+<!-- map() loops through each element in the array, applies the function, and returns a new array. -->
+<!-- .join(", ") takes that array and joins all elements into a single string, with , between them. -->
+
+<!-- result is : "2, 4, 6, 8" -->
